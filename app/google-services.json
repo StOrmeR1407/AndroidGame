@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "419627312953",
+    "firebase_url": "https://stormer-3970e-default-rtdb.firebaseio.com",
+    "project_id": "stormer-3970e",
+    "storage_bucket": "stormer-3970e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419627312953:android:797a53150322f3db9b2ae8",
+        "android_client_info": {
+          "package_name": "com.example.game"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxAJmVOHGrHbbS2kHPDHBIKuCdFgkHPSU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
