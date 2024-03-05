@@ -3,6 +3,7 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/archivo_black</item>
         <item>@font/baloo</item>
+        <item>@font/blinker_light</item>
         <item>@font/ultra</item>
     </array>
 </resources>

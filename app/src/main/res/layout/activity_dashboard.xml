@@ -29,7 +29,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/amazonDesc"
+            android:id="@+id/welcomeuser"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="18dp"
@@ -69,15 +69,17 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:id="@+id/clothingCard"
+                android:visibility="gone"
+                android:id="@+id/continuegame"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                app:cardElevation="20dp"
+                app:cardElevation="5dp"
                 app:cardCornerRadius="20dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:onClick="continueGame">
 
                     <TextView
                         android:id="@+id/clothingName"
@@ -107,13 +109,13 @@
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                app:cardElevation="20dp"
+                app:cardElevation="5dp"
                 app:cardCornerRadius="20dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:onClick="newGame">
 
                     <TextView
                         android:id="@+id/elecName"
@@ -128,12 +130,12 @@
                         android:textSize="20sp" />
 
                     <ImageView
+                        android:id="@+id/elecImage"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:id="@+id/elecImage"
-                        android:src="@drawable/play_btn"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        android:layout_centerHorizontal="true"/>
+                        android:src="@drawable/play_btn" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -161,7 +163,8 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:onClick="history">
 
                     <TextView
                         android:id="@+id/homeName"
@@ -176,12 +179,12 @@
                         android:textSize="20sp" />
 
                     <ImageView
+                        android:id="@+id/homeImage"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:id="@+id/homeImage"
-                        android:src="@drawable/history_btn"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        android:layout_centerHorizontal="true"/>
+                        android:src="@drawable/history_btn" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -196,7 +199,8 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:onClick="rank">
 
                     <TextView
                         android:id="@+id/beautyName"
@@ -211,12 +215,12 @@
                         android:textSize="20sp" />
 
                     <ImageView
+                        android:id="@+id/beautyImage"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:id="@+id/beautyImage"
-                        android:src="@drawable/rank_btn"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        android:layout_centerHorizontal="true"/>
+                        android:src="@drawable/rank_btn" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -244,7 +248,8 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:onClick="about">
 
                     <TextView
                         android:id="@+id/pharmName"
@@ -259,12 +264,12 @@
                         android:textSize="20sp" />
 
                     <ImageView
+                        android:id="@+id/pharmImage"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:id="@+id/pharmImage"
-                        android:src="@drawable/about_btn"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        android:layout_centerHorizontal="true"/>
+                        android:src="@drawable/about_btn" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -279,7 +284,8 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:onClick="exit">
 
                     <TextView
                         android:id="@+id/grocName"
@@ -294,12 +300,12 @@
                         android:textSize="20sp" />
 
                     <ImageView
+                        android:id="@+id/grocImage"
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:id="@+id/grocImage"
-                        android:src="@drawable/exit_btn"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        android:layout_centerHorizontal="true"/>
+                        android:src="@drawable/exit_btn" />
 
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
